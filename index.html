@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mumtaz Uddin | City-Pro Realty Inc.</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo">Mumtaz Uddin <span class="brokerage">City-Pro Realty Inc. Brokerage</span></h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#properties">Properties</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Your Dream Home Awaits</h2>
+            <p>Professional Real Estate Services in Mississauga</p>
+            <a href="#properties" class="btn btn-primary">View Properties</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Mumtaz</h2>
+            <p>Mumtaz Uddin is a dedicated realtor with City-Pro Realty Inc. Brokerage, serving the Mississauga area. Finding your perfect home or getting the best value for your property is my top priority.</p>
+        </div>
+    </section>
+
+    <section id="properties" class="properties">
+        <div class="container">
+            <h2>Featured Properties</h2>
+            <div id="property-list" class="property-grid">
+                <!-- Properties will be loaded via AJAX here -->
+                <p>Loading properties...</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> 647-299-5626</p>
+                <p><i class="fas fa-envelope"></i> mumtazcontact@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 5139 FOREST HILL DR, MISSISSAUGA, Ontario, L5M5A3</p>
+            </div>
+            <form id="contact-form" class="contact-form">
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+                <div id="form-message" style="margin-top: 15px; text-align: center; font-weight: 600;"></div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Mumtaz Uddin. City-Pro Realty Inc. Brokerage. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
