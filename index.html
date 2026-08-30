@@ -62,19 +62,27 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2>Contact Me</h2>
-            <div class="contact-info">
-                <p><i class="fas fa-phone"></i> 647-299-5626</p>
-                <p><i class="fas fa-envelope"></i> mumtazcontact@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> 5139 Forest Hill Dr., Mississauga, ON., L5M 5A3</p>
+            <h2 style="text-align: center;">Contact Me</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> <a href="tel:+16472995626" style="color: inherit; text-decoration: none; transition: color 0.3s;" onmouseover="this.style.color='var(--secondary-color)'" onmouseout="this.style.color='inherit'">647-299-5626</a></p>
+                    <p><i class="fas fa-envelope"></i> mumtazcontact@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt"></i> 5139 Forest Hill Dr., Mississauga, ON., L5M 5A3</p>
+                    <div class="map-container" style="margin-top: 20px; width: 100%; height: 250px; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?q=5139%20Forest%20Hill%20Dr,%20Mississauga,%20ON&t=&z=14&ie=UTF8&iwloc=&output=embed"></iframe>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form id="contact-form" class="contact-form">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <div id="form-message" style="margin-top: 15px; text-align: center; font-weight: 600;"></div>
+                    </form>
+                </div>
             </div>
-            <form id="contact-form" class="contact-form">
-                <input type="text" id="name" name="name" placeholder="Your Name" required>
-                <input type="email" id="email" name="email" placeholder="Your Email" required>
-                <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-                <div id="form-message" style="margin-top: 15px; text-align: center; font-weight: 600;"></div>
-            </form>
         </div>
     </section>
 

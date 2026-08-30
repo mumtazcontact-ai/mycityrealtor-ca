@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 },
                 body: JSON.stringify({
                     name: formData.get('name'),
+                    phone: formData.get('phone'),
                     email: formData.get('email'),
                     message: formData.get('message')
                 })
