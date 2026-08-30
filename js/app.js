@@ -44,21 +44,23 @@ function loadProperties() {
     const mockProperties = [
         {
             id: 1,
-            title: "Modern Family Home",
-            price: "$1,250,000",
-            address: "123 Maple Street, Mississauga",
-            image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
+            title: "Beautiful Home in Oshawa",
+            price: "$1,099,900",
+            address: "1178 Salmers Drive, Oshawa, ON",
+            image: "images/1178-salmers-drive.jpg",
             beds: 4,
-            baths: 3
+            baths: 5,
+            link: "https://www.realtor.ca/real-estate/29933933/1178-salmers-drive-oshawa-taunton"
         },
         {
             id: 2,
-            title: "Luxury Condo",
-            price: "$850,000",
-            address: "456 City Center Dr, Mississauga",
-            image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80",
-            beds: 2,
-            baths: 2
+            title: "Spacious Home for Lease",
+            price: "$3,200 / Month",
+            address: "104 Shepherd Drive, Barrie, ON",
+            image: "images/104-shepherd-drive.jpg",
+            beds: 4,
+            baths: 3,
+            link: "https://www.realtor.ca/real-estate/30176779/104-shepherd-drive-barrie-rural-barrie-southeast"
         },
         {
             id: 3,
@@ -79,8 +81,14 @@ function loadProperties() {
         mockProperties.forEach(prop => {
             const card = document.createElement('div');
             card.className = 'property-card';
+            
+            let imageHtml = `<img src="${prop.image}" alt="${prop.title}" class="property-image">`;
+            if (prop.link) {
+                imageHtml = `<a href="${prop.link}" target="_blank" rel="noopener noreferrer">${imageHtml}</a>`;
+            }
+            
             card.innerHTML = `
-                <img src="${prop.image}" alt="${prop.title}" class="property-image">
+                ${imageHtml}
                 <div class="property-details">
                     <div class="property-price">${prop.price}</div>
                     <h3>${prop.title}</h3>
