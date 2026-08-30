@@ -27,12 +27,29 @@ document.addEventListener('DOMContentLoaded', () => {
             formMessage.innerHTML = 'Sending...';
             formMessage.style.color = '#333';
             
-            // Mock network request
-            setTimeout(() => {
-                formMessage.innerHTML = `Thank you, ${name}! Your message has been sent successfully.`;
+            // Real network request using Formsubmit
+            fetch("https://formsubmit.co/ajax/mumtazcontact@gmail.com", {
+                method: "POST",
+                headers: { 
+                    'Content-Type': 'application/json',
+                    'Accept': 'application/json'
+                },
+                body: JSON.stringify({
+                    name: formData.get('name'),
+                    email: formData.get('email'),
+                    message: formData.get('message')
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                formMessage.innerHTML = 'someone will contact you in 24 hours, you message has been received';
                 formMessage.style.color = 'green';
                 contactForm.reset();
-            }, 1500);
+            })
+            .catch(error => {
+                formMessage.innerHTML = 'Oops! There was a problem submitting your form. Please try again.';
+                formMessage.style.color = 'red';
+            });
         });
     }
 });
