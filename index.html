@@ -11,7 +11,10 @@
 <body>
     <header class="navbar">
         <div class="container">
-            <h1 class="logo">Mumtaz Uddin <span class="brokerage">City-Pro Realty Inc. Brokerage</span></h1>
+            <div class="logo-container">
+                <img src="images/city-pro-logo.png" alt="City-Pro Realty Inc. Brokerage" class="header-logo">
+                <h1 class="logo">Mumtaz Uddin</h1>
+            </div>
             <nav>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
@@ -32,9 +35,15 @@
     </section>
 
     <section id="about" class="about">
-        <div class="container">
-            <h2>About Mumtaz</h2>
-            <p>Mumtaz Uddin is a dedicated realtor with City-Pro Realty Inc. Brokerage, serving the Mississauga area. Finding your perfect home or getting the best value for your property is my top priority.</p>
+        <div class="container about-container">
+            <div class="about-image">
+                <img src="images/mumtaz-uddin.jpg" alt="Mumtaz Uddin - Realtor">
+            </div>
+            <div class="about-text">
+                <h2>About Mumtaz Uddin</h2>
+                <p>Mumtaz Uddin is a dedicated and highly experienced professional realtor with City-Pro Realty Inc. Brokerage, proudly serving the Mississauga area and surrounding communities. With a deep understanding of the local real estate market, Mumtaz is committed to helping you navigate the complexities of buying or selling a home.</p>
+                <p>Whether you are a first-time homebuyer searching for your dream home or looking to get the best possible value for your property, Mumtaz's top priority is to provide exceptional service, expert negotiation, and a seamless experience from start to finish.</p>
+            </div>
         </div>
     </section>
 
@@ -54,7 +63,7 @@
             <div class="contact-info">
                 <p><i class="fas fa-phone"></i> 647-299-5626</p>
                 <p><i class="fas fa-envelope"></i> mumtazcontact@gmail.com</p>
-                <p><i class="fas fa-map-marker-alt"></i> 5139 FOREST HILL DR, MISSISSAUGA, Ontario, L5M5A3</p>
+                <p><i class="fas fa-map-marker-alt"></i> 5139 Forest Hill Dr., Mississauga, ON., L5M 5A3</p>
             </div>
             <form id="contact-form" class="contact-form">
                 <input type="text" id="name" name="name" placeholder="Your Name" required>
@@ -71,6 +80,11 @@
             <p>&copy; 2026 Mumtaz Uddin. City-Pro Realty Inc. Brokerage. All rights reserved.</p>
         </div>
     </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/16472995626" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <script src="js/app.js"></script>
 </body>
