@@ -42,9 +42,15 @@ document.addEventListener('DOMContentLoaded', () => {
             })
             .then(response => response.json())
             .then(data => {
-                formMessage.innerHTML = 'someone will contact you in 24 hours, you message has been received';
-                formMessage.style.color = 'green';
-                contactForm.reset();
+                if (data.success === "false" || data.success === false) {
+                    // Formsubmit API returned an error (like needing activation)
+                    formMessage.innerHTML = "Error: " + (data.message || "Please activate your email via a standard form submission first.");
+                    formMessage.style.color = 'red';
+                } else {
+                    formMessage.innerHTML = 'someone will contact you in 24 hours, you message has been received';
+                    formMessage.style.color = 'green';
+                    contactForm.reset();
+                }
             })
             .catch(error => {
                 formMessage.innerHTML = 'Oops! There was a problem submitting your form. Please try again.';
