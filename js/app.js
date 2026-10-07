@@ -83,7 +83,7 @@ function loadProperties() {
         {
             id: 1,
             title: "Beautiful Home in Oshawa",
-            price: "$1,099,900",
+            price: "$919,900",
             address: "1178 Salmers Drive, Oshawa, ON",
             image: "images/1178-salmers-drive.jpg",
             beds: 4,
@@ -93,7 +93,7 @@ function loadProperties() {
         {
             id: 2,
             title: "Spacious Home for Lease",
-            price: "$3,200 / Month",
+            price: "$3,200 / Month (Leased)",
             address: "104 Shepherd Drive, Barrie, ON",
             image: "images/104-shepherd-drive.jpg",
             beds: 4,
