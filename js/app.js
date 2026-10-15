@@ -92,16 +92,6 @@ function loadProperties() {
         },
         {
             id: 2,
-            title: "Spacious Home for Lease",
-            price: "$3,200 / Month (Leased)",
-            address: "104 Shepherd Drive, Barrie, ON",
-            image: "images/104-shepherd-drive.jpg",
-            beds: 4,
-            baths: 3,
-            link: "https://www.realtor.ca/real-estate/30176779/104-shepherd-drive-barrie-rural-barrie-southeast"
-        },
-        {
-            id: 2,
             title: "Brand New Condo for Lease",
             price: "$2,500/Mon",
             address: "1503A-115 Nipissing Rd., Milton, ON.",
@@ -112,6 +102,16 @@ function loadProperties() {
         },
         {
             id: 3,
+            title: "Spacious Home for Lease",
+            price: "$3,200 / Month (Leased)",
+            address: "104 Shepherd Drive, Barrie, ON",
+            image: "images/104-shepherd-drive.jpg",
+            beds: 4,
+            baths: 3,
+            link: "https://www.realtor.ca/real-estate/30176779/104-shepherd-drive-barrie-rural-barrie-southeast"
+        },
+        {
+            id: 4,
             title: "Spacious Suburban Villa",
             price: "$2,100,000",
             address: "789 Pine Avenue, Mississauga",
