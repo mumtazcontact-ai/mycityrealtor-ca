@@ -105,9 +105,9 @@ function loadProperties() {
             title: "Brand New Condo for Lease",
             price: "$2,500/Mon",
             address: "1503A-115 Nipissing Rd., Milton, ON.",
-            image: "images/104-shepherd-drive.jpg",
-            beds: 4,
-            baths: 3,
+            image: "images/1503A-115-Nipissing-Rd.jpg",
+            beds: 2,
+            baths: 2,
             link: "https://www.realtor.ca/real-estate/30373317/1503a-115-nipissing-road-milton-tm-timberlea-1037-tm-timberlea"
         },
         {
