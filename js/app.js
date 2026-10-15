@@ -88,7 +88,7 @@ function loadProperties() {
             image: "images/1178-salmers-drive.jpg",
             beds: 4,
             baths: 5,
-            link: "https://www.realtor.ca/real-estate/29933933/1178-salmers-drive-oshawa-taunton"
+            link: "https://www.realtor.ca/real-estate/30331286/1178-salmers-drive-oshawa-taunton"
         },
         {
             id: 2,
